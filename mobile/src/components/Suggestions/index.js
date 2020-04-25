@@ -13,22 +13,22 @@ const items = [
     {
         key: String(Math.random()),
         img: img1,
-        label: 'Doações',
+        label: 'Recarga',
     },
     {
         key: String(Math.random()),
         img: img2,
-        label: 'Doações',
+        label: 'Uber',
     },
     {
         key: String(Math.random()),
         img: img3,
-        label: 'Doações',
+        label: 'Ônibus',
     },
     {
         key: String(Math.random()),
         img: img4,
-        label: 'Doações',
+        label: 'TV',
     },
     {
         key: String(Math.random()),
@@ -38,18 +38,21 @@ const items = [
     {
         key: String(Math.random()),
         img: img6,
-        label: 'Doações',
+        label: 'Barras',
     },
     {
         key: String(Math.random()),
         img: img7,
-        label: 'Doações',
+        label: 'FAQ',
     },
 ]
 
 export default function Suggestions() {
   return (
-    <ScrollContainer horizontal>
+    <ScrollContainer 
+    horizontal
+    showsHorizontalScrollIndicator={false}
+    >
         {items.map((item)=>(
             <Option key={item.key}>
                 <Img source={item.img}/>

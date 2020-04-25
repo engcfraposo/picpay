@@ -8,9 +8,11 @@ export const ScrollContainer = styled.ScrollView `
 `;
 
 export const Option = styled.TouchableOpacity`
-    margin-top: 30px;
+    
     padding-left: 16px;
     width: 80px;
+    align-items: center;
+    justify-content: center;
     
 `;
 

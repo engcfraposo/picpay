@@ -6,6 +6,8 @@ import { Wrapper, Header, ScrollContainer, IconContainer, BalanceContainer, Bala
 
 import Activities from '../../components/Activities'
 import Suggestions from '../../components/Suggestions'
+import Tips from '../../components/Tips'
+import Banner from '../../components/Banner'
 
 export default function Home() {
   return (
@@ -27,7 +29,12 @@ export default function Home() {
         </Header>
 
         <Suggestions/>
+
         <Activities/>
+
+        <Tips/>
+
+        <Banner/>
       </ScrollContainer>
     </Wrapper>
   );

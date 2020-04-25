@@ -1,8 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Feather, MaterialCommunityIcons } from '@expo/vector-icons'
 
 import 
-{ Container,
+{ 
+  Container,
    Header,
    Title,
    Card,
@@ -11,8 +12,16 @@ import
    Description,
    Bold,
    CardBody,
-   UserName
-  } 
+   UserName,
+   CardFooter,
+   Detail,
+   Value,
+   Divider,
+   Date,
+   Actions,
+   Option,
+   OptionLabel,
+ }
 from './styles';
 
 import avatar from '../../assets/avatar.png'
@@ -36,6 +45,31 @@ export default function Activities() {
           <UserName>Cláudio Rapôso</UserName>
         </CardBody>
 
+        <CardFooter>
+          <Detail>
+            <Value>R$ 10,00</Value>
+
+            <Divider></Divider>
+
+            <Feather name="lock" size={15} color="#fff" />
+
+            <Date>há 2 anos</Date>
+            
+          </Detail>
+
+          <Actions>
+            <Option>
+              <MaterialCommunityIcons name="comment-outline" size={15} color="#fff" />
+              <OptionLabel>0</OptionLabel>
+            </Option>
+            <Option>
+              <MaterialCommunityIcons name="heart-outline" size={15} color="#fff" />
+              <OptionLabel>0</OptionLabel>
+            </Option>
+            
+          </Actions>
+          
+        </CardFooter>
 
       </Card>
     </Container>
